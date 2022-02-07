@@ -1,0 +1,20 @@
+{
+  "name": "stock-intrinsic-value-calculator",
+  "version": "1.0.0",
+  "description": "A library to help calculate the intrinsic value of a stock",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eziosantori/stock-intrinsic-value-calculator.git"
+  },
+  "keywords": [],
+  "author": "Ezio Santori",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eziosantori/stock-intrinsic-value-calculator/issues"
+  },
+  "homepage": "https://github.com/eziosantori/stock-intrinsic-value-calculator#readme"
+}
