@@ -1,10 +1,19 @@
 {
   "name": "stock-intrinsic-value-calculator",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A library to help calculate the intrinsic value of a stock",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.(js|ts)\"",
+    "lint": "eslint src --ext .js,.ts",
+    "lint:fix": "eslint src --fix --ext .js,.ts",
+    "test": "jest --config jest.config.js",
+    "publish": "npm publish"
   },
   "repository": {
     "type": "git",
@@ -12,9 +21,20 @@
   },
   "keywords": [],
   "author": "Ezio Santori",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/eziosantori/stock-intrinsic-value-calculator/issues"
   },
-  "homepage": "https://github.com/eziosantori/stock-intrinsic-value-calculator#readme"
+  "homepage": "https://github.com/eziosantori/stock-intrinsic-value-calculator#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.15",
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
+    "eslint": "^7.11.0",
+    "eslint-plugin-jest": "^24.1.0",
+    "jest": "^26.6.0",
+    "prettier": "^2.3.0",
+    "ts-jest": "^26.4.1",
+    "typescript": "^4.5.5"
+  }
 }
