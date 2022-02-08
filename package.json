@@ -17,13 +17,16 @@
     "prepare" : "npm run build",
     "prepublishOnly" : "npm test && npm run lint",
     "preversion" : "npm run lint",
-    "publish": "npm publish"
+    "publish": "npm publish",
+    
+    "version" : "npm run format && git add -A src",
+    "postversion" : "git push && git push --tags"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eziosantori/stock-intrinsic-value-calculator.git"
   },
-  "keywords": [],
+  "keywords": ["stock","intrinsic", "value", "calculator", "algorithm"],
   "author": "Ezio Santori",
   "license": "MIT",
   "bugs": {
