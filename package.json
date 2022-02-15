@@ -1,6 +1,6 @@
 {
   "name": "stock-intrinsic-value-calculator",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A library to help calculate the intrinsic value of a stock",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -17,7 +17,6 @@
     "prepare" : "npm run build",
     "prepublishOnly" : "npm test && npm run lint",
     "preversion" : "npm run lint",
-    "publish": "npm publish",
     
     "version" : "npm run format && git add -A src",
     "postversion" : "git push && git push --tags"
